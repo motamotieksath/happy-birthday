@@ -21,3 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', changeBackground);
     changeBackground(); // Initial call to set the background image
 });
+
+for (let i = images.length - 1; i >= 0; i--) {
+    body.style.backgroundImage = `url(${images[i]})`;
+}
